@@ -18,4 +18,11 @@ public class Calculator {
     public static int divide(int num1, int num2) {
         return num1 / num2;
     }
+//    public static void qwe(int x) {
+//         System.out.println("int x : " + x);
+//    }
+//    public void qwer() {
+//
+//    }
+
 }
