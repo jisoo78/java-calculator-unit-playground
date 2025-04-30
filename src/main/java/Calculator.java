@@ -1,5 +1,6 @@
 public class Calculator {
 
+
     public static int add(int num1, int num2) {
         // int 정수형으로 반환
         // add, subtract, multiply, divide 메소드 사용
@@ -18,11 +19,6 @@ public class Calculator {
     public static int divide(int num1, int num2) {
         return num1 / num2;
     }
-//    public static void qwe(int x) {
-//         System.out.println("int x : " + x);
-//    }
-//    public void qwer() {
-//
-//    }
+
 
 }
