@@ -34,12 +34,12 @@ public class StringCalculator {
             // 문자열 자르기
         }
 
-        String[] arr = str.split(delimiter);
+        String[] delimiterArrays = str.split(delimiter);
         // 구분자를 기준으로 문자열을 잘라냄
         int total = 0;
 
-        for (String s : arr) {
-            if (!s.isEmpty()) total += Integer.parseInt(s);
+        for (String delimiterString : delimiterArrays) {
+            if (!delimiterString.isEmpty()) total += Integer.parseInt(delimiterString);
         }
 
         return total;
