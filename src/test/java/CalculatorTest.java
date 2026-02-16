@@ -18,4 +18,22 @@ public class CalculatorTest {
         int actual = 15;
         assertEquals(actual, expected);
     }
+
+    @Test
+    @DisplayName("사칙연산 중 뺄셈의 기능을 구현할 수 있다")
+    public void test_subtraction() {
+
+        // given
+        int a = 10;
+        int b = 5;
+
+        Calculator calculator = new Calculator();
+        // when
+        int expected = calculator.subtraction(a, b);
+
+        // then
+        int actual = 5;
+        assertEquals(actual, expected);
+
+    }
 }
