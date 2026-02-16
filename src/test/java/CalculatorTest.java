@@ -1,0 +1,21 @@
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class CalculatorTest {
+    @Test
+    @DisplayName("사칙연산 중 덧셈의 기능을 구현할 수 있다")
+    public void test_add() {
+        // given
+        int a = 5;
+        int b = 10;
+
+        Calculator calculator = new Calculator();
+        // when
+        int expected = calculator.add(a, b);
+
+        // then
+        int actual = 15;
+        assertEquals(actual, expected);
+    }
+}
