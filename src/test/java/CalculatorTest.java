@@ -36,4 +36,19 @@ public class CalculatorTest {
         assertEquals(actual, expected);
 
     }
+
+    @Test
+    @DisplayName("사칙연산 중 곱셈의 기능을 구현할 수 있다")
+    public void test_multiplication() {
+        // given
+        int a = 3;
+        int b = 4;
+
+        Calculator calculator = new Calculator();
+        // when
+        int expected = calculator.multiplication(a, b);
+        // then
+        int actual = 12;
+        assertEquals(actual, expected);
+    }
 }
